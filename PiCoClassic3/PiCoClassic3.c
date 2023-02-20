@@ -137,37 +137,9 @@ void exec_by_mode(int mode)	//モード番号に従って実行する
 			rotate(right,2);								//ゴールしたら180度回転する
 			mypos.dir = (t_direction)((mypos.dir+6) % 4);	//方角を更新
 			map_write();
-//			goal_appeal();									//ゴールしたことをアピール
-//		search_adachi(15,0);								//スタート地点まで足立法で帰ってくる
 			search_adachi(0,0);								//スタート地点まで足立法で帰ってくる
 			map_write();
-///			rotate(right,2);								//帰ってきたら180度回転
-//			fast_run(9,1);
-//			rotate(right,2);								//帰ってきたら180度回転
-//			map_copy();
 			goal_appeal();
-//スラローム
-//			_LED(5);	
-//			map_copy();
-//			mypos.x = mypos.y = 0;			//座標を初期化
-//			mypos.dir = north;				//方角を初期化
-//			accel = 1.0;					//加速度を設定
-//
-//			fast_slalom_run(GOAL_X,GOAL_Y,MAX_SLALOM_SP1);		//ゴールまで最短走行
-//			rotate(right,2);				//ゴールしたら180度回転
-//
-//			back(50);						//壁にぶつけて姿勢を整える
-//			wait_ms(1000);					//少し待機
-//			straight(30,0,200,0);
-//			
-//			back(100);						//壁にぶつけて姿勢を整える
-//			wait_ms(1000);					//少し待機
-//			straight(30,0,200,0);
-			
-//			mypos.dir = (t_direction)((mypos.dir+6) % 4);		//方角を更新
-//			goal_appeal();					//ゴールしたことをアピール
-//			fast_run(0,0);
-
 			break;
 		
 		case 3:		//最短走行
