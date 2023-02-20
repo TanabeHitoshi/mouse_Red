@@ -45,8 +45,6 @@ extern void fast_slalom_run(int x, int y, int max_slalom_sp);
 extern void adjust_menu(void);
 extern void USB_CHECK(void);
 
-
-
 void _LED(int led_data)
 {
 	LED0 = led_data&0x01;
@@ -54,7 +52,6 @@ void _LED(int led_data)
 	LED2 = (led_data>>2)&0x01;
 	LED3 = (led_data>>3)&0x01;
 }
-
 
 void main(void)
 {
