@@ -32,7 +32,6 @@ void abort(void);
 }
 #endif
 
-
 void exec_by_mode(int mode);
 
 extern void init_all(void);
